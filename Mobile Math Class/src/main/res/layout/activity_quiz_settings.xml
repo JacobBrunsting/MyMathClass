@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.brunsting.jacob.mobilemathclass.QuizSettings"
+    android:id="@+id/settingsLayout"
+    android:background="@color/backgroundColor">
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quizSettingsPrimaryColor"
+        android:indeterminate="false"
+        android:max="150"
+        android:thumbTint="#ffffff"
+        android:layout_below="@+id/quizSettingsColor1TitleTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:progressTint="#ffffff"
+        android:progress="58" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quizSettingsSecondaryColor"
+        android:indeterminate="false"
+        android:max="150"
+        android:thumbTint="#ffffff"
+        android:layout_below="@+id/quizSettingsColor2TitleTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:progressTint="#ffffff"
+        android:progress="139" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quizSettingsTitleTxt"
+        android:textSize="@dimen/titleTextSize"
+        android:textColor="@color/titleTextColor"
+        android:gravity="center_horizontal"
+        android:text="@string/quizSettingsTitleTxt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quizSettingsColor1TitleTxt"
+        android:id="@+id/quizSettingsColor1TitleTxt"
+        android:layout_below="@+id/quizSettingsTitleTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/subtitleTextSize" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quizSettingsColor2TitleTxt"
+        android:id="@+id/quizSettingsColor2TitleTxt"
+        android:layout_below="@+id/quizSettingsPrimaryColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/subtitleTextSize" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quizSettingsHomeBtn"
+        android:id="@+id/quizSettingsHomeBtn"
+        android:textColor="@color/textColor1"
+        android:background="@color/buttonColor1"
+        android:textSize="@dimen/btnTextSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:height="@dimen/hugeButtonHeight" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quizSettingsNumQuestionsTxt"
+        android:id="@+id/quizSettingsNumQuestionsTitleTxt"
+        android:layout_below="@+id/quizSettingsSecondaryColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/subtitleTextSize" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quizSettingsNumQuestionsBar"
+        android:indeterminate="false"
+        android:max="100"
+        android:thumbTint="#ffffff"
+        android:progressTint="#ffffff"
+        android:layout_below="@+id/quizSettingsNumQuestionsTitleTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/quizSettingsNumQuestionsValueTxt"
+        android:layout_toStartOf="@+id/quizSettingsNumQuestionsValueTxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unsetTitleTxt"
+        android:id="@+id/quizSettingsNumQuestionsValueTxt"
+        android:layout_alignBottom="@+id/quizSettingsNumQuestionsBar"
+        android:layout_alignRight="@+id/quizSettingsNumQuestionsTitleTxt"
+        android:layout_alignEnd="@+id/quizSettingsNumQuestionsTitleTxt"
+        android:textSize="@dimen/subtitleTextSize"
+        android:textAlignment="gravity"
+        android:width="30dp"
+        android:layout_alignTop="@+id/quizSettingsNumQuestionsBar"
+        android:gravity="center_vertical|right" />
+
+</RelativeLayout>

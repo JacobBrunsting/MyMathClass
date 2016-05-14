@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="buttonColor1">#FF616161</color>
+    <color name="textColor1">#FFE0E0E0</color>
+    <color name="incorrectAnswerColor">#FFEF5350</color>
+    <color name="titleTextColor">#FF616161</color>
+    <color name="backgroundColor">#FFE0E0E0</color>
+    <color name="correctAnswerColor">#FF81C784</color>
+    <color name="tint1">#32000000</color>
+    <color name="accent_material_dark">#ffffff</color>
+</resources>

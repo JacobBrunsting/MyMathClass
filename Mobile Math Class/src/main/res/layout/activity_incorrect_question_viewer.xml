@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".IncorrectQuestionViewer"
+    android:background="@color/backgroundColor"
+    android:id="@+id/incorrectQuestionViewerLayout">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/incorrectQuestionsTitleTxt"
+        android:id="@+id/incorrectQuestionViewerTitleTxt"
+        android:textSize="@dimen/titleTextSize"
+        android:textColor="@color/titleTextColor"
+        android:gravity="center|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/incorrectQuestionsQuestionTxt"
+        android:layout_below="@+id/incorrectQuestionViewerTitleTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/incorrectQuestionViewerQuestionTitleTxt"
+        android:gravity="center"
+        android:textSize="@dimen/subtitleTextSize"
+        android:layout_margin="@dimen/buttonMargin" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/incorrectQuestionViewerQuestionTxt"
+        android:textSize="@dimen/smallTitleTextSize"
+        android:textColor="@color/titleTextColor"
+        android:gravity="center|center_horizontal"
+        android:layout_below="@+id/incorrectQuestionViewerQuestionTitleTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/unsetTitleTxt"
+        android:layout_marginLeft="@dimen/buttonMargin"
+        android:layout_marginTop="@dimen/buttonMargin"
+        android:layout_marginRight="@dimen/buttonMargin"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/incorrectQuestionsUserAnswerTxt"
+        android:id="@+id/incorrectQuestionViewerAnswerTitleTxt"
+        android:layout_below="@+id/incorrectQuestionViewerQuestionTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:textSize="@dimen/subtitleTextSize"
+        android:layout_margin="@dimen/buttonMargin" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/incorrectQuestionViewerAnswerTxt"
+        android:textSize="@dimen/smallTitleTextSize"
+        android:textColor="@color/titleTextColor"
+        android:gravity="center_horizontal"
+        android:text="@string/unsetTitleTxt"
+        android:layout_below="@+id/incorrectQuestionViewerAnswerTitleTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/buttonMargin"
+        android:layout_marginTop="@dimen/buttonMargin"
+        android:layout_marginRight="@dimen/buttonMargin"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/incorrectQuestionsCorrectAnswerTxt"
+        android:id="@+id/incorrectQuestionViewerActualAnswerTitleTxt"
+        android:layout_below="@+id/incorrectQuestionViewerAnswerTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:textSize="@dimen/subtitleTextSize"
+        android:layout_margin="@dimen/buttonMargin" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/incorrectQuestionViewerActualAnswerTxt"
+        android:textSize="@dimen/smallTitleTextSize"
+        android:textColor="@color/titleTextColor"
+        android:gravity="center|center_horizontal"
+        android:text="@string/unsetTitleTxt"
+        android:layout_below="@+id/incorrectQuestionViewerActualAnswerTitleTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/buttonMargin"
+        android:layout_marginTop="@dimen/buttonMargin"
+        android:layout_marginRight="@dimen/buttonMargin"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/incorrectQuestionsNextBtn"
+        android:id="@+id/incorrectQuestionViewerNextBtn"
+        android:textColor="@color/textColor1"
+        android:background="@color/buttonColor1"
+        android:textSize="@dimen/btnTextSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/incorrectQuestionViewerActualAnswerTxt"
+        android:layout_alignEnd="@+id/incorrectQuestionViewerActualAnswerTxt"
+        android:height="@dimen/hugeButtonHeight" />
+
+</RelativeLayout>
